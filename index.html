@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shakti</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+ /*for certificate */
+   * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+.border{
+    border: 10px solid #F7F9F9 ;
+}
+
+
+</style>
+  </head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://shaktiprofile.w3spaces.com/Shakti111/IMG_20221110_131808.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+    <!--<a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>-->
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+<a href="#certificate" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-certificate w3-xxlarge"></i>
+    <p>CERTIFICATE</p>
+  </a>
+  <a href="https://drive.google.com/file/d/1M62TU1KKAyx3pdowI-qFjdBLOeJotTtJ/view?usp=sharing" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-download w3-xxlarge"></i>
+    <p>RESUME</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+   <!-- <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>-->
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a href="#certificate" class="w3-bar-item w3-button" style="width:25% !important">CERTIFICATE</a>
+     <a href="https://drive.google.com/file/d/1M62TU1KKAyx3pdowI-qFjdBLOeJotTtJ/view?usp=sharing" class="w3-bar-item w3-button" style="width:25% !important">RESUME</a>
+  </div>
+</div>
+
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Shakti Durge.</h1>
+    <p>Software Engineer.</p>
+    <img src="https://shaktiprofile.w3spaces.com/Shakti111/IMG_20221110_131808.jpg" alt="boy" class="w3-image" width="692" height="708">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am an experienced software engineer and have gained a strong reputation in the area. I have worked on a variety of software projects and have gained a lot of knowledge in the process.
+      An Engineer with passion in IT industry and hope to make a difference. I had completed my Diploma in Software Development Engineer In Testing (Java By Kiran) and i am an Computer Science Engineer by degree and completed my graduation frome RTM Nagpur University in 2020.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Automation Testing</p>
+    <div class="w3-white">
+       <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="height:28px;width:90%">90%</div>
+    </div>
+    <p class="w3-wide">Manual Testing</p>
+    <div class="w3-white">
+     <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="height:28px;width:95%">95%</div>
+    </div>
+     <p class="w3-wide">Core Java</p>
+    <div class="w3-white">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="height:28px;width:80%">80%</div>
+    </div>
+     <p class="w3-wide">MySQL</p>
+    <div class="w3-white">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="height:28px;width:85%">85%</div>
+    </div>
+    <p class="w3-wide">C Programming</p>
+    <div class="w3-white">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="height:28px;width:90%">90%</div>
+    </div><br>
+
+     <button class="w3-button w3-light-grey w3-padding-large w3-section">
+     <a href="https://drive.google.com/file/d/1jJpOaU_K0yhbWBP8n8n83GTY1RodAEhI/view?usp=drivesdk"> <i class="fa fa-download"></i> Download Resume</a>
+    </button>
+    
+<!-- <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+     <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5+</span><br>
+        Partners
+      </div> 
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10+</span><br>
+        My Projects
+      </div>
+      <div class="w3-quarter w3-section">
+        
+        Topics 
+      </div>
+     <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div> -->
+
+    <!-- Grid for pricing tables -->
+    <!-- <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+
+<!-- Certificate -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="certificate">
+    <h2 class="w3-text-light-grey">My Certificate</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+<div class="row">
+  <div class="column">
+    <img src="https://drive.google.com/file/d/1yInSejjLICh4MDOM4teoMWmn04bnDTiA/view?usp=drivesdk" class="border"  alt="Excel" style="width:100% " onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://drive.google.com/file/d/16Ycz9SIbLNUYzp-OxVjhT7X_J-fhWBgg/view?usp=drivesdk" class="border" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://drive.google.com/file/d/1bGfklDjanWR2kyQgW2uFi7fOQMBviJ07/view?usp=drivesdk" class="border" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://drive.google.com/file/d/1mcmTe1JWJTGpbNZQuHMel4n5ylI40RaH/view?usp=drivesdk" class="border" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+    <div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+ </script>  
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <img src="https://shaktiprofile.w3spaces.com/Shakti111/IMG_20221110_144916.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Ashish Janbandhu.</span> Software Engineer at TCS.</p>
+    <p>Very Hardworking and good learner. He always try to learn new things.</p><br>
+    
+    <img src="https://shaktiprofile.w3spaces.com/Shakti111/IMG_20221110_152445.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Pritam Khobragade.</span> Buisnessman.</p>
+    <p>Shakti is always positive and self motivated, and makes everyone around them feel good.</p>
+  <!-- End About Section -->
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+       <!-- Grid for photos 
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+     <div class="w3-half">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/chef.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    
+  <!-- End Portfolio Section -->
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Viman Nagar Pune</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +9189999361271</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: Shaktidurge007@gmail.com</p>
+    </div><br>
+
+    <!-- Follow me -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Follow Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><a href="https://wa.me/918999361271?text=Hello" ><i class="fa fa-whatsapp fa-fw w3-text-white w3-xxlarge "></i></a>
+      <a href="https://www.linkedin.com/in/shakti-durge-981511216" ><i class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-center"></i></a>
+      <a href="https://www.facebook.com/shakti.durge.7" ><i class="fa fa-facebook-official fa-fw w3-text-white w3-xxlarge "></i></a>
+      <a href="https://instagram.com/shakti_durge?igshid=YmMyMTA2M2Y=" ><i class="fa fa-instagram fa-fw w3-text-white w3-xxlarge "></i></a>
+      <a href="https://github.com/ShaktiD007" ><i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-center"></i></a></p>
+    </div><br>
+
+    <p>Let's get in touch. Send me a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+   <!-- Footer-->
+
+ <p class="w3-small">Developed by KAUSHAL KISHOR</p>
+ 
+ <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
